@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+body {
+margin: 25px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.cell {
+  border: 1px black solid;
+  width: 82px;
+  height: 70px;
+  font-size: 55px;
+  text-align: center;
+  padding: 20px;
+}
+
+.add-word {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  height: 35pxs;
+  margin: auto, 25px;
+
+}

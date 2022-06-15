@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %}PLAY{% endblock %}
+
+{% block content%} 
+<section id="boggle">
+  <table class="board">
+    <tbody>
+  {% for row in board %}
+    <tr class="row">
+    {% for vec in row %}
+    <td class="cell">{{vec}}</div>
+  {% endfor %}
+  </div>
+  {% endfor %}
+  </div>
+</tbody>
+</table>
+
+<p>High Score: 
+  <b>{{ highscore }}</b> 
+  in {{ nplays }} plays
+</p>
+
+<p>
+  Score: <b class="score">0</b>
+  Seconds Left: <b class="timer"></b>
+</p>
+
+  <form class="add-word" method="POST">
+    <input name="word" class="word" autofocus>
+    <button>Make Guess</button>
+  </form>
+
+  <p class="msg">
+    <!-- our JS will put messages here dynamically -->
+  </p>
+
+  <ul class="words">
+   words: <!-- our JS will words here as they score -->   
+  </ul>
+</section>
+{% endblock %}
